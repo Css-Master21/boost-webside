@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+a {
+    color: #26a0f2;
+    text-decoration: none;
+}
+
 #pagecontainer {
     width: 100%;
 }
@@ -41,18 +46,15 @@ body {
     width:90%;
     height:auto;
     /* float:left; */
-    margin:100px auto 0 auto;
-    border:red solid 1px;   
+    margin:100px auto 0 auto;  
 }
 
 .two-columns-left {
-    border:yellow solid 1px;
     float:left;
     width:50%;
 }
 
 .two-columns-right {
-    border:green solid 1px; 
     float:left;
     width:49%;
     padding:200px 0;
@@ -94,5 +96,76 @@ body {
     width: 90%;
     height: auto;
     border-radius: 55px;
-
 }
+
+#component-wrapper-01 {
+    float: left;
+    width: 100%;
+}
+
+.parallax {
+    position:relative;
+    z-index:1;
+    height:450px;
+    -webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+  }
+  
+  #trans1 {
+    background: url('../images/trafikant-banner.jpg') no-repeat fixed;
+    height:300px;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .testimonial-card {
+      background-color: #F5F5F5;
+      width: 500px;
+      float: left;
+      margin: 30px 0 30px 50%;
+      padding: 15px 0 15px 0;
+  }
+
+  .testimonial-card::before{
+    content: "\201D";
+    font-size: 72px;
+    line-height: 0em;
+    
+   
+    background: #f5f5f5;
+    margin-left: 0px;
+    border-radius: 31px;
+    z-index: 2;
+    
+    border: 1px red solid;
+  }
+
+  .testimonial-content-image img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border:rgba(30, 30, 30, 0.30) solid 2px;
+      margin-right: 15px;
+  }
+
+  .testimonial-wrapper {
+      padding: 10px 40px;
+      float: left;
+  }
+
+  .testimonial-content-image {
+    float:left;
+  }
+
+  .testimonial-txt {
+      float: left;
+      width: 65%;
+  }
+
+  .testimonial-txt p {
+      margin:0;
+  }
